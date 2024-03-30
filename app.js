@@ -2,10 +2,12 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.use(express.json());
+
 app.post('/webhook', async (req, res) => {
-    const {body} = req;
     try {
-        console.log(body);
+        console.log("req.body",req.body);
+
     } catch(e) {
         console.error(e);
         return res.status(400).json();

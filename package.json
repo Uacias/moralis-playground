@@ -5,11 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "server": "node app.js",
+    "ngrok": "ngrok http 3000",
+    "stream": "node stream.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "@moralisweb3/common-evm-utils": "^2.25.2",
+    "dotenv": "^16.4.5",
+    "moralis": "^2.25.2"
   }
 }
